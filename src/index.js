@@ -46,7 +46,8 @@ function getCurrentLocation(event) {
 
 function showWeather(response) {
   let descriptionElement = document.querySelector("#description");
-  let precipitationElement = document.querySelector("#precipitation");
+  let feelsLike = Math.round(response.data.temperature.feels_like);
+  let feel = document.querySelector("#feelsLikeTemp");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
@@ -54,8 +55,8 @@ function showWeather(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-  descriptionElement.innerHTML = response.data.weather[0].description;
-  precipitationElement.innerHTML = response.data.weather[0].precipitation;
+  descriptionElement.innerHTML = response.data.weather[0].description:
+  feel.innerHTML = `${feelsLike}°`;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   iconElement.setAttribute(
