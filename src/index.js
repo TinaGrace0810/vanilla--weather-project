@@ -55,8 +55,8 @@ function showWeather(response) {
     response.data.main.temp
   );
   descriptionElement.innerHTML = response.data.weather[0].description;
-  precipitationElement.innerHTML = response.data.weather[0].precipitation;
-  humidityElement.innerHTML = response.data.weather[0].humidity;
+  precipitationElement.innerHTML = response.data.main.precipitation;
+  humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   iconElement.setAttribute(
     "src",
