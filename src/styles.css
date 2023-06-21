@@ -3,55 +3,52 @@ body {
 }
 
 h1 {
-color: rgba(117, 119, 112, 0.952);
- font-size: 26px;
- font-weight: 100;
- line height: 10px;
- margin: auto 0;
- padding: 5px;
+  color: rgba(117, 119, 112, 0.952);
+  font-size: 26px;
+  font-weight: 100;
+  line-height: 10px;
+  margin: auto 0;
+  padding: 5px;
 }
 
 h2 {
   color: rgba(103, 104, 96, 0.952);
   font-size: 24px;
- font-weight: 100;
- line height: 10px;
- margin: auto 0;
-
+  font-weight: 100;
+  line-height: 10px;
+  margin: auto 0;
 }
 
-ul{
- margin: 0;
- padding: 3px;
- }
+ul {
+  margin: 0;
+  padding: 3px;
+}
 
 li {
-
- color: white;
- display: block;
- font-size: 18px;
- line-height: 18px;
- font-weight: 100;
- list-style: none;
+  color: white;
+  display: block;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 100;
+  list-style: none;
 }
 
 .weather-app {
-
- border:5px ridge rgb(20, 20, 20);
- padding: 12px;
- margin: auto 0;
- border radius: 15px;
- max-width: 500px;
- background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%);
- 
+  border: 5px ridge rgb(20, 20, 20);
+  padding: 12px;
+  margin: auto 0;
+  border-radius: 15px;
+  max-width: 500px;
+  background-image: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg");
+  background-size: cover;
 }
 
 .temperature {
- color: white;
- font-size: 60px;
- font-weight: 300;
-margin: auto;
-line-height: 1;
+  color: white;
+  font-size: 60px;
+  font-weight: 300;
+  margin: auto;
+  line-height: 1;
 }
 
 .weather-icon {
@@ -59,9 +56,7 @@ line-height: 1;
   font-size: 60px;
 }
 
-.col
-
-{
+.col {
   padding: 15px;
   font-size: 13px;
 }
