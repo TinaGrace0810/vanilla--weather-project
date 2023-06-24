@@ -68,8 +68,6 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
-import axios from "axios";
-
 function getForecast(coordinates) {
   let apiKey = "eaat2082d1dabe69502o3fa4aa574ecb";
   let apiUrl =
