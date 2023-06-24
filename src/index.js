@@ -77,10 +77,6 @@ function getForecast(coordinates) {
   axios.get(apiUrl).then(displayForecast);
 }
 
-function displayForecast(response) {
-  // function definition
-}
-
 function search(event) {
   event.preventDefault();
   let cityInput = document.querySelector("#city-input");
