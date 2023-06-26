@@ -132,6 +132,23 @@ function CurrentLocation() {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
+function getCurrentLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    alert("Geolocation is not supported by this browser.");
+  }
+}
+
+function showPosition(position) {
+  console.log(
+    "Latitude: " +
+      position.coords.latitude +
+      " Longitude: " +
+      position.coords.longitude
+  );
+}
+
 dateElement.innerHTML = `${days[dayIndex]} ${hours}: ${minutes}`;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
